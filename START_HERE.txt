@@ -1,0 +1,34 @@
+NEARGUARD - TEAM BITHAWK
+
+VERSION 2.0.1: 4K video uploads are automatically resized for processing.
+Stop any older NearGuard terminal before starting this version.
+
+1. Extract the complete ZIP into a NEW folder. Do not run it inside the ZIP.
+2. Install Python 3.12 if Python is not already installed.
+3. Double-click INSTALL_WINDOWS.bat. Internet is needed for setup.
+4. Double-click START_WINDOWS.bat.
+5. Open http://127.0.0.1:8000 if the browser does not open automatically.
+6. Keep the terminal window open while using the app.
+
+FIRST DEMO
+Video studio -> Run intersection demo -> wait for completion ->
+Incident explorer -> select a candidate -> play evidence -> confirm/reject ->
+What-if replay -> Compare measured paths.
+
+The supplied frontend is already built. Node.js is NOT required just to run it.
+No MongoDB account, API key, payment or new camera is needed.
+
+IMPORTANT
+Default detector = motion baseline (not YOLO).
+
+Real datasets:
+- Read REAL_DATASETS.md before claiming dataset accuracy.
+- Run python scripts/prepare_real_dataset_workspace.py to create folders for BDD100K, MOT17, CityFlow, DoTA, A3D and CADP.
+- Raw real datasets are not bundled because they are large and have separate licences/access rules.
+YOLO is optional and requires model installation; see README.md.
+Synthetic videos are demonstrations, not real-world accuracy benchmarks.
+PET is not implemented. The what-if experiment is not a crash prediction.
+No detection-accuracy percentage has been established.
+
+Tests: see TEST_REPORT.md.
+If anything fails, share the terminal error or a screenshot, not passwords.

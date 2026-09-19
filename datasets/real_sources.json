@@ -1,0 +1,51 @@
+{
+  "purpose": "Real dataset sources for NearGuard validation. Raw files are not bundled because of size and licensing.",
+  "datasets": [
+    {
+      "name": "BDD100K",
+      "type": "road object detection",
+      "official_url": "https://bdd-data.berkeley.edu/",
+      "reference_url": "https://docs.voxel51.com/dataset_zoo/datasets/bdd100k.html",
+      "near_guard_use": "Train/evaluate YOLO road-user detection for person, bicycle, car, motorcycle, bus and truck.",
+      "access_note": "Manual registration/download may be required. Keep raw files outside the submitted ZIP."
+    },
+    {
+      "name": "MOT17",
+      "type": "multi-object tracking",
+      "official_url": "https://motchallenge.net/data/MOT17/",
+      "near_guard_use": "Evaluate tracking ID stability across frames.",
+      "access_note": "Public archive; useful for tracking, mainly pedestrians."
+    },
+    {
+      "name": "CityFlow / AI City Challenge",
+      "type": "urban traffic camera tracking",
+      "official_url": "https://www.aicitychallenge.org/",
+      "reference_url": "https://arxiv.org/abs/1903.09254",
+      "near_guard_use": "Evaluate vehicle tracking in multi-camera city traffic settings.",
+      "access_note": "Follow official AI City Challenge data instructions."
+    },
+    {
+      "name": "DoTA",
+      "type": "traffic anomaly dataset",
+      "official_url": "https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly",
+      "reference_url": "https://arxiv.org/abs/2004.03044",
+      "near_guard_use": "Compare candidate risky events against temporal and object-level anomaly annotations.",
+      "access_note": "Use for research validation, not as a proof of deployed accuracy by itself."
+    },
+    {
+      "name": "A3D",
+      "type": "dashcam anomaly/accident reference",
+      "official_url": "https://github.com/MoonBlvd/tad-IROS2019",
+      "near_guard_use": "Study anomaly-detection evaluation and compare with dashcam scenarios.",
+      "access_note": "Download through the authors' provided workflow and respect the source terms."
+    },
+    {
+      "name": "CADP",
+      "type": "CCTV traffic-camera accident analysis",
+      "official_url": "https://ankitshah009.github.io/accident_forecasting_traffic_camera",
+      "near_guard_use": "CCTV-style validation reference for accident forecasting and small pedestrian detection difficulty.",
+      "access_note": "Use dataset release instructions from the project page."
+    }
+  ]
+}
+
